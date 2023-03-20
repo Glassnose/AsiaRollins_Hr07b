@@ -9,16 +9,16 @@ public class Month : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        while (x <= 12)
+        if (x <= 12)
         {
 
             Debug.Log("Just another Month" + x);
-            x = x + 1;
          
         }
-        if (x <= 2)
+        else if (x >= 2)
         {
-            Debug.Log("It's my Birthday 1-15" );
+            Debug.Log("It's my Birthday 1-15" + x );
+            x = x + 1;
             
         }
     }
